@@ -1,0 +1,125 @@
+.mainHeader .navbar-brand {
+    width: 120px;
+}
+
+.mainHeader .navbar-brand img {
+    width: 100%;
+}
+
+.mainHeader .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mainHeader .navbar-nav .active>.nav-link,
+.mainHeader .navbar-nav .nav-link.active,
+.mainHeader .navbar-nav .nav-link.show,
+.mainHeader .navbar-nav .show>.nav-link {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.mainHeader .navbar-nav .nav-link:focus,
+.mainHeader .navbar-nav .nav-link:hover {
+    color: orange;
+    border-bottom: 2px solid;
+}
+
+
+
+/* css for main slider  */
+
+.mainSlider .carousel-item {
+    height: 450px;
+}
+
+.mainSlider .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainSlider .carousel-caption {
+    bottom: auto;
+    top: 25%;
+}
+
+.paralax {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.paralax::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.paralax.home {
+    background-image: url(../images/lights.jpg);
+}
+
+.paralax.video {
+    background-image: url(../images/media.jpg);
+}
+
+.video i {
+    cursor: pointer;
+}
+
+
+.home-gallary a {
+    height: 350px;
+    width: 100%;
+    display: inline-block;
+}
+
+.home-gallary a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#tmSlider .owl-nav {
+    position: absolute;
+    top: 25%;
+    left: -3%;
+    width: 106%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tmSlider .item {
+    text-align: justify;
+}
+
+#tmSlider .item img {
+    width: 80% !important;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.staff img {
+    width: 100%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width:768px) {
+    .news .form-inline .form-group {
+        flex: 0 0 100%;
+    }
+}
